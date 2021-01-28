@@ -76,7 +76,7 @@ __main__ training block above and returning it to be used by the predict_fn
 function below.
 """
 def model_fn(model_dir):
-    model = joblib.load(os.path.join(model_dir, "model.joblib"))
+    model = joblib.load(os.path.join('s3://yp-sagemaker-practical/train/', "model.joblib"))
     return model
 
 """
